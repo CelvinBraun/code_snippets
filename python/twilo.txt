@@ -5,7 +5,7 @@ account_sid = 'XYZ'
     message = client.messages \
         .create(
         body="It will rain, take a umbrella with you!",
-        from_='+19728464793',
+        from_='+19728464793' # twilio example number! :),
         to='XYZ'
     )
 
