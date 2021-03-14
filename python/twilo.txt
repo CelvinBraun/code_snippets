@@ -1,0 +1,12 @@
+account_sid = 'XYZ'
+    auth_token = 'XYZ'
+    client = Client(account_sid, auth_token)
+
+    message = client.messages \
+        .create(
+        body="It will rain, take a umbrella with you!",
+        from_='+19728464793',
+        to='XYZ'
+    )
+
+    print(message.sid)
